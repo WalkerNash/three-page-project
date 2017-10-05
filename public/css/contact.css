@@ -1,0 +1,230 @@
+@charset "utf-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+a { text-decoration: none; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+.btn {
+  background-color: black;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+	margin-top: 7.5%;
+  margin-left: 2.5%;
+	width: 60px;
+}
+
+nav ul {
+	background-color: #505664;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	display: inline-table;
+	position: relative;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	color: white;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	width: 60px;
+  transition: 0.3s background-color ease-in-out;
+
+}
+
+nav ul li a:hover{
+  	background-color: red;
+    border: 3px solid #444444;
+    border-radius: 2px;;
+    transition: 1s background-color ease-in-out;
+
+}
+
+nav ul li ul {
+	background-color: black;
+	margin-top: 20px;
+	padding: 5px 0;
+	position: absolute;
+}
+
+nav ul li ul:before {
+	background-color: black;
+	content: "";
+	display: block;
+	height: 8px;
+	left: 26px; /* (nav ul li a { width: 60px; } / 2) - (nav ul li ul:before { width: 8px; } / 2) */
+	position: absolute;
+	top: -4px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 8px;
+	z-index: -1;
+}
+
+nav ul li ul li {
+	float: none;
+}
+
+nav ul li ul li a {
+	color: #fff;
+}
+
+nav ul li ul li a:hover {
+	background-color: red;
+}
+
+/* General CSS */
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-header {
+  background-color: gray;
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.indent-wrap {
+  width: 35em;
+  text-indent: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+  word-wrap: break-word;
+}
+
+.aboutalign {
+  margin-left: 17vw;
+}
+.abt-article {
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+
+.indent {
+  margin-left: 3vw;
+}
+
+.footer {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: gray;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.btn-c-group {
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+.btn-c {
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 2px;
+  color: white;
+  font-family: verdana;
+  padding: 6px 20px;
+  display: inline-block;
+  text-decoration: none;
+
+  transition: 0.3s background-color ease-in-out;
+}
+
+.btn-c:hover {
+  background-color: red;
+  transition: 1s background-color ease-in-out;
+}
+
+.pika {
+  display: block;
+  height: auto;
+/*  width: 500px;
+  max-width: 100%;
+  min-width: 100px;*/
+  margin-left: 100%;
+  animation: run 5s linear infinite;
+}
+
+.pikabox {
+  margin-left: 17vw;
+}
+
+.contactcontainer {
+  margin-top: 7.5%;
+}
+@keyframes run {
+  0% {
+    transform: translateX(0);
+     }
+  100% {
+    transform: translateX(calc(-100vw - 500px));
+       }
+}
+
+@media  screen and (max-width: 480px) {
+    nav {
+      margin-top: 25%;
+    }
+  }
+
+ @media  screen and (max-width: 768px) {
+    nav {
+  margin-top: 20%;
+  }
+
+}
+
+@media  screen and (max-width: 992px) {
+  nav {
+    margin-top: 15%;
+  }
+}
