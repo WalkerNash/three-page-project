@@ -75,6 +75,11 @@ div.ff7 *{
   background-color: gray;
 }
 
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
 .left {
   float: left;
 }
@@ -107,18 +112,32 @@ div.ff7 *{
 
 
 @media only screen and (max-width: 480px) {
+  nav {
+    margin-top: 25%;
+  }
   .ff7 {
     margin-top: 20%;
+    width: 50vw;
   }
+  /*.footer {
+    position: relative;
+  }*/
 }
 
  @media only screen and (max-width: 768px) {
+   nav {
+     margin-top: 20%;
+   }
    .ff7 {
      margin-top: 15%;
+     width: 40vw;
    }
 }
 
 @media only screen and (max-width: 992px) {
+  nav {
+    margin-top: 15%;
+  }
   .ff7 {
     margin-top: 10%;
   }

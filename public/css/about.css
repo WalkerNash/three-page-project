@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .container {
@@ -17,44 +18,9 @@
   z-index: 999;
 }
 
-.indent-wrap {
-  display: block;
-  width: 100%;
-  text-indent: 25px;
-  text-align: justify;
-  word-wrap: break-word;
-}
-
-.aboutalign {
-  margin-left: 17vw;
-}
-
-h2 {
-  text-align: center;
-  margin: auto
-}
-
-.abt-article {
-  margin-top: 5%;
-  margin-left: 1vw;
-}
-
 .nav-shield {
   width: 100%;
   height: 55px;
-}
-
-.indent {
-  margin-left: 3vw;
-  width: 40%;
-}
-
-.footer {
-  height: 10%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: gray;
 }
 
 .left {
@@ -87,19 +53,63 @@ h2 {
   transition: 1s background-color ease-in-out;
 }
 
+.aboutalign {
+  margin-left: 17vw;
+}
+
+h2 {
+  text-align: center;
+  margin: auto
+}
+
+.article {
+  margin-top: 5%;
+  margin-left: 1vw;
+}
+
+.indent {
+  /*margin-left: 3vw;*/
+  width: 40%;
+}
+
+.indent-wrap {
+  display: block;
+  width: 100%;
+  text-indent: 25px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.pikabox {
+  /*margin-left: 20vw;*/
+  margin-top: 5vh;
+  width: 40%;
+}
+
+h3 {
+  text-align: center;
+  margin: auto;
+}
+
 .pika {
   display: block;
   height: auto;
   width: 500px;
   max-width: 100%;
   min-width: 100px;
-  margin-left: 100%;
+  margin-left: 250%;
   animation: run 5s linear infinite;
 }
 
-.pikabox {
-  margin-left: 17vw;
+.footer {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: gray;
 }
+
+
 
 @keyframes run {
   0% {
@@ -111,8 +121,25 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
-  .nav-header .btn {
+  /*.nav-header .btn {
     display: none;
+  }*/
+  .indent {
+    width: 90%;
+    margin-right: 10px;
+  }
+  .pikabox {
+    width: 90%;
+    margin-right: 10px;
+  }
+  .pika {
+    display: block;
+    height: auto;
+    width: 500px;
+    max-width: 100%;
+    min-width: 100px;
+    margin-left: 120%;
+    animation: run 5s linear infinite;
   }
 }
 
