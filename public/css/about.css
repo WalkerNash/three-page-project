@@ -97,6 +97,7 @@ h3 {
   width: 500px;
   max-width: 100%;
   min-width: 100px;
+  margin-top: 50px;
   margin-left: 250%;
   animation: run 5s linear infinite;
 }
